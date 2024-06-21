@@ -1,0 +1,13 @@
+{% extends "prac_APP/base.html" %}
+{% block content %}
+<h2>Register</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>Register</button>
+ <p> If you already have an account
+            click <a href="{% url 'login_view' %}">Here!</a></p>
+</form>
+
+
+{% endblock %}

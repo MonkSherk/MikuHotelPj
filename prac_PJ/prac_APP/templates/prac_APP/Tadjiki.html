@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="display: flex; align-content: center">ТАДЖИКИ НАЧАЛИ РАБОТУ !!</h1>
+<script>
+    function TimeOutRedirectToOtherHtmlPage() {
+    setTimeout(function () {
+        window.location.href = "{% url 'room_list' %}";
+    }, 3000);
+}
+TimeOutRedirectToOtherHtmlPage()
+</script>
+</body>
+</html>

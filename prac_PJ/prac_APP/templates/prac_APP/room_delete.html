@@ -1,0 +1,9 @@
+{% extends "prac_APP/base.html" %}
+{% block content %}
+<h2>Таджики старались строить эту комнату , а ты хочешь её просто удалить?</h2>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Удалить нахуй</button>
+    <a href="{% url 'room_detail' room.id %}">Cancel</a>
+</form>
+{% endblock %}

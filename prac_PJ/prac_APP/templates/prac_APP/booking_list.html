@@ -1,0 +1,9 @@
+{% extends "prac_APP/base.html" %}
+{% block content %}
+<h2>My Bookings</h2>
+<ul>
+    {% for booking in bookings %}
+    <li><a href="{% url 'booking_detail' booking.id %}">Booking for Room {{ booking.room.room_number }} from {{ booking.check_in }} to {{ booking.check_out }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

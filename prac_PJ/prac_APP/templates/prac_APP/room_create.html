@@ -1,0 +1,10 @@
+{% extends 'prac_APP/base.html' %}
+
+
+{% block content %}
+<form action="" enctype="multipart/form-data" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button>В секунду после того как вы нажмете на кнопку Таджики сразу примутся за работу!</button>
+</form>
+{% endblock %}
